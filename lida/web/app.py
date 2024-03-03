@@ -33,7 +33,7 @@ app.mount("/api", api)
 
 
 root_file_path = os.path.dirname(os.path.abspath(__file__))
-static_folder_root = os.path.join(root_file_path, "ui")
+static_folder_root = os.path.join(root_file_path, "react-app/public") # TODO: Revert this to the original 'ui' once everything is fully functional
 files_static_root = os.path.join(root_file_path, "files/")
 data_folder = os.path.join(root_file_path, "files/data")
 os.makedirs(data_folder, exist_ok=True)
